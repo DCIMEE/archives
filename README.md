@@ -1,5 +1,3 @@
-# blog
-archives
-
+# archives
 
 To do
