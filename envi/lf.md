@@ -16,10 +16,10 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 use command `lf` to start listFiles on current directory  
 
 ### Configuration
-> 1. `mkdir -p ~/.config/lf`    
->`cp $GOPATH/src/github.com/gokcehan/lf/etc/lfrc.example ~/.config/lf/lfrc`  
+ 1. `mkdir -p ~/.config/lf`    
+`cp $GOPATH/src/github.com/gokcehan/lf/etc/lfrc.example ~/.config/lf/lfrc`  
 
-> 2. `mkdir -p ~/.config/lf`  
+ 2. `mkdir -p ~/.config/lf`  
 `curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/lfrc.example -o ~/.config/lf/lfrc`  
 
 [Configuration Example](https://pkg.go.dev/github.com/gokcehan/lf#section-readme)  
