@@ -1,0 +1,124 @@
+"init.vim" location:
+
+	~/.config/nvim/init.vim         (Unix and OSX)
+	~/AppData/Local/nvim/init.vim   (Windows)
+
+[root@host] $ cp /home/username/.config/nvim/init.vim /root/.config/nvim/
+
+set clipboard=unnamedplus // to share the clipboard with system
+Nvim_terminal_emulator, :split term://bash or :tabnew term://bash
+
+===
+PRE:
+===
+nodejs, git, nvim, vim-plug
+
+$HOME/.config	// "echo $HOME" to check the home directoray
+
+" === Mode ===
+Normal - ESC
+Insert - "k" to insert before the block 
+Visual - v on Normal mode
+
+
+" === Move ===
+"n" to go left
+"i" to go right
+"e" to go down
+"u" to go up
+
+
+
+" === Word and Block Move ===
+"w" to move to the next word
+"b" to move to the last word
+"0" to move to the first place on the line
+"G" to move to the last line, "gg" to the first line
+"K" go to the start of the line
+"A" go to the end of the line
+
+
+
+" === Write ===
+"p" to paste
+"y" to copy // same command as "d" on " === delete ===
+"d" to cut
+"yk"" copy everything in ""
+
+" N
+
+
+
+
+"k" to insert
+"S" to save
+"Q" to quit, // if you want to quit without save, then type ":q!" ("ZZ" for ":q!")
+"R" to reload the $MYVIMRC file
+
+
+
+
+" === Delete ===
+"x" to delete the word on the cursor
+"c" to delete the word on the cursor and insert/edit on the current place.
+
+"ckw" / change in word, in general
+"ck'x'" / change in 'x', for example `"' for'x', then it will delete everything in ""
+"dk"" delete everything in ""
+
+<Operation> <Motion>
+"d" plus command,
+"d" plus/+ navigation, delete one word on the way it gave.
+"d" plus/+ "number" plus/+ navigation = delete "num" word on the direction 
+double "d" to delete/cut the current line,
+
+
+
+" === Search ===
+Search on vim : "/"
+disable higlightSearch / :nohlsearch // space + enter
+
+"f + 'x'" / "fv" to find the first word start with "v" on current line
+"df:" to delete till ":", "yf:" to copy till ":" , and so on
+
+
+" === Split Screen ===
+":split" for vertical split, ":q"/Q to quit	//su, se
+":vsplit" for horizontal split, "q"/Q to quit	//sn, si
+"set splitright" then "vsplit", to move the cursor to the right side(<LEADER + i/n>)
+"sh" to transform vsplit to split. //up & down
+"sv" to transform split to vsplit. // left & right
+
+
+
+
+" === Visual Mode ===
+"shift + v" to select as line
+"ctrl  + v" to enter the "Visual Block" mode
+after select, press":" the type [mode][command] // :normal AfinsHere
+it would add "finsHere" in the end of every line selected
+(after selected all words on block, press "shift+k" to insert, this change would apply to all block that have chosen)
+
+<C-w>l //Ctrl+w+l
+
+
+" New Page
+":tabe" //tu
+":-tabnext" move left page //tn
+":+tabnext" move right page //ti
+
+
+" === Plugin ===
+call plugin#begin()
+Plugin '{adress of the plugin/github(https)}' // git needed
+dall plugin#end()
+
+////COC.NVIM
+Nodejs, vim-plug
+:help coc-nvim
+
+" Misc.
+:e ~/Desktop/a.py	//e for edit, to edit a file on vim
+:set spell!	// to enable spelling mistake check
+,z=, to open possible correction
+:x, to save and exit
